@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="/home.html" id="regexform" onsubmit="return formvalidation()">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your Username">
+      <p>Enter your valid username (only letters and numbers, at least 3 characters)</p>
+    </div>
+    <div>
+      <label for="Mobile_number">Contact Number:</label>
+      <input type="text" placeholder="Enter your Phone number" id="Mobile_number">
+      <p>Enter your valid phone number.</p>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Enter your email" id="email">
+      <p>Enter your valid Email.</p>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Enter your password" id="password">
+      <p>Enter your valid password.</p>
+    </div>
+    <div>
+      <label for="confirm_password">Confirm password:</label>
+      <input type="password" placeholder="Confirm your password" id="confirm_password">
+      <p>Confirm your password.</p>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
